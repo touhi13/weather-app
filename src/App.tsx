@@ -8,7 +8,7 @@ const CountryInfo = lazy(() => import('./components/CountryInfo'));
 
 const App: React.FC = () => {
   return (
-    <div className='app'>
+    <div className='app' data-testid ="app">
       <Suspense fallback={<p>Loading...</p>}>
         <BrowserRouter>
           <Routes>
